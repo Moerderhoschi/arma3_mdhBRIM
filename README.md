@@ -9,7 +9,7 @@ FEATURES
 - Add 3D Icon and Mapmarker to unconscious players
 - Only players which side are friendly to yours get a 3D Icon and Mapmarker (TVT-Compatible)
 
-Dowload on Steam: [https://steamcommunity.com/sharedfiles/filedetails/?id=3361183268](https://steamcommunity.com/sharedfiles/filedetails/?id=753249732)
+Dowload on Steam: https://steamcommunity.com/sharedfiles/filedetails/?id=753249732
 
 CREDITS:
 - Armed-Assault.de Crew - For many great ArmA moments in many years
