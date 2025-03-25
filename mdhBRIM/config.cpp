@@ -37,7 +37,7 @@ class CfgMods
 	{
 		dir = "@mdhBRIM";
 		name = "BohemiaReviveIconMarker";
-		picture = "mdhBrim\brimIconX.paa";
+		picture = "\a3\ui_f\data\IGUI\RscIngameUI\RscUnitInfo\icon_cross_ca.paa";
 		hidePicture = "true";
 		hideName = "true";
 		actionName = "Website";
