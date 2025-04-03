@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-// MDH BOHEMIA REVIVE ICON MARKER MOD(by Moerderhoschi) - v2025-03-16
+// MDH BOHEMIA REVIVE ICON MARKER MOD(by Moerderhoschi) - v2025-04-03
 // github: https://github.com/Moerderhoschi/arma3_mdhBRIM
 // steam mod version: https://steamcommunity.com/sharedfiles/filedetails/?id=753249732
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,6 +38,12 @@ if (missionNameSpace getVariable ["pMdhBRIM",99] == 99 && {isMultiplayer}) then
 		
 				if(_c) then
 				{
+					mdhBRIMbriefingFnc =
+					{
+						missionNameSpace setVariable[_this#0,_this#1];
+						systemChat (_this#2);
+					};
+
 					player createDiaryRecord
 					[
 						"MDH Mods",
@@ -45,6 +51,11 @@ if (missionNameSpace getVariable ["pMdhBRIM",99] == 99 && {isMultiplayer}) then
 							_t,
 							(
 							  '<br/>Bohemia Revive Icon Marker is a mod, created by Moerderhoschi for Arma 3, to add an icon and Mapmarker to unconscious players. '
+							+ '<br/><br/>'
+							+ 'set MDH BRIM Unconscious Map Markers: '
+							+    '<font color="#33CC33"><execute expression = "[''pBRIMMapMarkers'',1,''MDH BRIM Unconscious Map Markers ON''] call mdhBRIMbriefingFnc">ON</execute></font color>'
+							+ ' / <font color="#33CC33"><execute expression = "[''pBRIMMapMarkers'',0,''MDH BRIM Unconscious Map Markers OFF''] call mdhBRIMbriefingFnc">OFF</execute></font color>'
+							+ '<br/><br/>'
 							+ 'If you have any question you can contact me at the steam workshop page.<br/>'
 							+ '<br/>'
 							+ '<img image="'+_icon+'"/>'
@@ -95,7 +106,7 @@ if (missionNameSpace getVariable ["pMdhBRIM",99] == 99 && {isMultiplayer}) then
 					];
 				};
 
-				if (missionNameSpace getVariable ["pPlayerMapMarkers",0] == 0) then
+				if (missionNameSpace getVariable ["pPlayerMapMarkers",0] == 0 && {missionNameSpace getVariable ["pBRIMMapMarkers",1] == 1}) then
 				{
 					{deleteMarkerLocal _x} forEach _markers;
 					{
