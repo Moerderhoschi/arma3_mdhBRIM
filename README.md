@@ -1,4 +1,4 @@
- ![Alt text](https://images.steamusercontent.com/ugc/260468244957899476/7BE0240023A23C14BA13FA7AE19E9A50B5D9BDB0/)
+![brim](https://github.com/user-attachments/assets/bded87b7-4a84-42b4-94c4-f1cf19b1bc5b)
 
 Bohemia Revive Icon Marker is a mod, created by Moerderhoschi for Arma 3, to add an icon and Mapmarker to unconscious players.
 
