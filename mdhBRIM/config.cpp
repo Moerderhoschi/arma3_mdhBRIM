@@ -24,7 +24,7 @@ class CfgFunctions
 		{
 			class mdhBRIM
 			{
-				file = "mdhBRIM\init.sqf";
+				file = "mdhBRIM\mdhBRIM.sqf";
 				postInit = 1;
 			};
 		};
